@@ -7,7 +7,7 @@ const app = new Vue({
             'Mangiare',
             'Dormire',
             'Guardare TV'
-        ]
+        ],
     },
     methods: {
        addTask(){
@@ -22,6 +22,13 @@ const app = new Vue({
        removeTask(index){
         //Rimuovere task dalla lista
         this.tasks.splice(index, 1)
-       }
+       },
+    },
+    mounted(){
+        document.addEventListener("keyup",function(e){
+            if(e.key=="Enter"){
+                app.addTask();
+            }
+        })
     }
-});
+})

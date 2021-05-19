@@ -21,14 +21,14 @@
         <div class="tasks" v-if="tasks.length > 0">
             <div class="task" v-for="(task, index) in tasks">
                 <p contenteditable="true">{{task}}</p>
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle"@click=""></i>
                 <i class="fas fa-times-circle" @click="removeTask(index)"></i>
             </div>
         </div>
         <div class="no_tasks" v-else>
             <p>Nulla da fare</p>
         </div>
-
+        <div class="completed-task"></div>
     </div>
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
