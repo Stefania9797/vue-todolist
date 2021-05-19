@@ -26,8 +26,8 @@ const app = new Vue({
        },
        doneTask(i){
            this.completedTasks.push(i)
-           console.log(this.completedTasks);
-        }
+           console.log(this.tasks);
+        },
     },
     mounted(){
         document.addEventListener("keyup",function(e){
@@ -37,6 +37,3 @@ const app = new Vue({
         })
     }
 })
-//perché sia disponibile index, devi passarlo 
-//come argomento nel tuo html e riceverlo nel metodo 
-//in ingresso (appunto come in removeTask)
