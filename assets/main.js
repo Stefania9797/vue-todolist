@@ -4,9 +4,9 @@ const app = new Vue({
     data: {
         newTask: '',
         tasks: [
-            'Learn HTML',
-            'Learn CSS',
-            'Learn JS'
+            'Mangiare',
+            'Dormire',
+            'Guardare TV'
         ]
     },
     methods: {
