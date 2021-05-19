@@ -21,7 +21,7 @@
             <div class="tasks" v-if="tasks.length > 0">
                 <div class="task" v-for="(task, index) in tasks">
                     <p contenteditable="true">{{task}}</p>
-                    <i class="fas fa-check-circle"@click=""></i>
+                    <i class="fas fa-check-circle"@click="doneTask"></i>
                     <i class="fas fa-times-circle" @click="removeTask(index)"></i>
                 </div>
             </div>
@@ -31,8 +31,8 @@
         </div>
         <div class="completed-tasks" v-if="completedTasks.length>0">
             <h2>Attività completate</h2>
-            <div class="comp-task" v-for="(completeTask,i) in completedTasks">
-
+            <div class="comp-task" v-for="(completeTask) in completedTasks">
+                <p>{{completeTask}}</p>
             </div>
         </div>
     </div>

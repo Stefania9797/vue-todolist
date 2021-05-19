@@ -24,6 +24,10 @@ const app = new Vue({
         //Rimuovere task dalla lista
         this.tasks.splice(index, 1)
        },
+       doneTask(){
+           this.completedTasks.push()
+            console.log(this.completedTasks);
+        }
     },
     mounted(){
         document.addEventListener("keyup",function(e){
