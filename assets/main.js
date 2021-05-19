@@ -8,6 +8,7 @@ const app = new Vue({
             'Dormire',
             'Guardare TV'
         ],
+        completedTasks:[]
     },
     methods: {
        addTask(){
