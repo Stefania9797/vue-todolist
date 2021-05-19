@@ -24,9 +24,9 @@ const app = new Vue({
         //Rimuovere task dalla lista
         this.tasks.splice(index, 1)
        },
-       doneTask(){
-           this.completedTasks.push()
-            console.log(this.completedTasks);
+       doneTask(i){
+           this.completedTasks.push(i)
+           console.log(this.completedTasks);
         }
     },
     mounted(){
@@ -37,3 +37,6 @@ const app = new Vue({
         })
     }
 })
+//perché sia disponibile index, devi passarlo 
+//come argomento nel tuo html e riceverlo nel metodo 
+//in ingresso (appunto come in removeTask)
