@@ -10,16 +10,13 @@ const app = new Vue({
         ]
     },
     methods: {
-       /** Add a task */
        addTask(){
-           // pushare new task in tasks
+           //Aggiungere task alla lista
             this.tasks.push(this.newTask)
             this.newTask = ''
        },
        removeTask(index){
-        // remove task
-        console.log('Remove task n.' + index);
-        // Usare splice
+        //Rimuovere task dalla lista
         this.tasks.splice(index, 1)
        }
     }
