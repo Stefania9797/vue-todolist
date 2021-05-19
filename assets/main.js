@@ -12,8 +12,12 @@ const app = new Vue({
     methods: {
        addTask(){
            //Aggiungere task alla lista
-            this.tasks.push(this.newTask)
-            this.newTask = ''
+           if(this.newTask.length>0){
+               this.tasks.push(this.newTask)
+               this.newTask = ''
+           }else{
+               alert("Impossibile aggiungere elemento vuoto")
+           }
        },
        removeTask(index){
         //Rimuovere task dalla lista
