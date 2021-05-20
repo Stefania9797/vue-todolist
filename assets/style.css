@@ -20,6 +20,9 @@ body {
   display: flex;
   align-items: center;
 }
+.tasks input {
+  border-style: none;
+}
 .task:hover {
   background-color: lightblue;
 }

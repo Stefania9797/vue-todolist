@@ -26,7 +26,6 @@ const app = new Vue({
        },
        doneTask(i){
            this.completedTasks.push(i)
-           console.log(this.tasks);
         },
     },
     mounted(){
