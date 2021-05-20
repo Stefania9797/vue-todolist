@@ -32,7 +32,7 @@
         <div class="completed-tasks" v-if="completedTasks.length>0">
             <h2>Attività completate</h2>
             <div class="comp-task" v-for="(completeTask,i) in completedTasks">
-                <p>{{completeTask}}</p>
+                <p>{{completeTask}}</p> <i class="fa fa-undo" aria-hidden="true" @click="restoreTasks(index, completeTask)"></i>
             </div>
         </div>
     </div>

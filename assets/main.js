@@ -27,6 +27,12 @@ const app = new Vue({
        doneTask(i){
            this.completedTasks.push(i)
         },
+        restoreTasks(index,tasks){
+            //rimuovere task da completati
+            this.completedTasks.splice(index,1)
+            //riaggiungerlo in tasks da fare
+            this.tasks.push(tasks)
+        }
     },
     mounted(){
         document.addEventListener("keyup",function(e){
